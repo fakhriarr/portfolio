@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: 'Bricolage Grotesque';
+        src: url('/fonts/bricolage-grotesque-latin.woff2') format('woff2');
+        font-weight: 400 800;
+      }
+      @font-face {
+        font-family: 'Instrument Sans';
+        src: url('/fonts/instrument-sans-latin.woff2') format('woff2');
+        font-weight: 400 700;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        width: 1200px;
+        height: 630px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 72px 80px;
+        background: #ffffff;
+        color: #000000;
+        font-family: 'Instrument Sans', sans-serif;
+        overflow: hidden;
+      }
+      .display {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        line-height: 0.96;
+        font-size: 96px;
+      }
+      .role {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 14px 28px;
+        border-radius: 999px;
+        background: #000000;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .name {
+        margin-top: 36px;
+        font-size: 30px;
+        color: #6b6b6b;
+      }
+      .spark {
+        position: absolute;
+        left: 660px;
+        top: 78px;
+        width: 64px;
+        height: 64px;
+        color: #2b4dff;
+      }
+      .portrait {
+        width: 380px;
+        height: 380px;
+        border-radius: 999px 999px 32px 32px;
+        background: #f4f4f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .portrait span {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 150px;
+        font-weight: 800;
+        color: #dededb;
+        letter-spacing: -0.03em;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="display">Muhammad Fakhri<br />Ar Rouf</div>
+      <div class="role">UI/UX Designer</div>
+      <div class="name">Simple, intuitive interfaces — from sketch to prototype.</div>
+    </div>
+    <svg class="spark" viewBox="0 0 100 100" fill="currentColor">
+      <path
+        d="M50 0c1.9 25.6 23.5 47.1 50 50-26.5 2.9-48.1 24.4-50 50-1.9-25.6-23.5-47.1-50-50C26.5 47.1 48.1 25.6 50 0Z"
+      />
+    </svg>
+    <div class="portrait"><span>FR</span></div>
+  </body>
+</html>
