@@ -102,8 +102,6 @@ export const contact = {
   line: "Have a project in mind or want to talk about an opportunity?",
   email: 'fakhriarrouf2003@gmail.com',
   emailLabel: 'Send me an email',
-  phoneDisplay: '0858 7040 2536',
-  phone: '+6285870402536',
   links: [
     {
       label: 'LinkedIn',

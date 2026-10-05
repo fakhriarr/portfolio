@@ -33,6 +33,7 @@ export const projects: Project[] = [
     ],
     takeaways:
       "This project taught me the importance of redesigning with purpose rather than simply creating a more modern interface. Every visual improvement was driven by usability and business objectives.",
+    gallery: ['/projects/royaltech-1.webp', '/projects/royaltech-2.webp', '/projects/royaltech-3.webp', '/projects/royaltech-4.webp'],
   },
   {
     slug: 'jumping-jack',
@@ -52,21 +53,22 @@ export const projects: Project[] = [
       'Designing for the food and beverage industry goes beyond aesthetics. Effective restaurant websites should evoke emotion and communicate brand personality.',
   },
   {
-    slug: 'jacks-cake-house',
-    title: "Jack's Cake House",
-    category: 'E-Commerce',
-    cover: '/projects/cakehouse.webp',
+    slug: 'bertumbuh-academy',
+    title: "Bertumbuh Academy",
+    category: 'Education website',
+    cover: '/projects/bertumbuh.webp',
     short:
-      'An e-commerce website for a premium bakery, from browsing to checkout.',
+      'A friendly course website that helps learners discover programs and register with ease.',
     overview:
-      "Jack's Cake House is an e-commerce website designed for a premium bakery brand, providing a seamless experience from discovering products to completing online orders. Users can browse collections, customize cakes, manage their cart, and complete purchases.",
+      "Bertumbuh Academy is an offline course platform that helps people build practical skills in design, programming, and marketing. This website design covers the home page, course catalog, articles, and about page, helping visitors explore courses, meet instructors, read student testimonials, and get in touch through WhatsApp.",
     goals: [
-      "Design a website that reflects the bakery's premium brand identity",
-      'Create an intuitive shopping experience from product discovery to checkout',
-      'Simplify the cake customization and ordering process',
+      "Help visitors find the right course quickly with clear categories, search, and course types",
+      "Build trust through instructor profiles, testimonials, and a clear brand story",
+      "Create a friendly, approachable look that makes learning feel less intimidating",
+      "Drive registrations and inquiries with clear calls to action"
     ],
-    takeaways:
-      'This project highlighted the importance of information hierarchy, intuitive purchasing flows, and reducing friction throughout the customer journey to create a shopping experience that is both enjoyable and efficient.',
+    takeaways: "Designing for an education brand taught me that clarity and trust drive enrollment. Clear course cards, visible social proof, and a friendly visual tone make learning feel approachable, while consistent components keep a content-heavy website easy to scan.",
+    gallery: ['/projects/bertumbuh-1.webp', '/projects/bertumbuh-2.webp', '/projects/bertumbuh-3.webp', '/projects/bertumbuh-4.webp'],
   },
   {
     slug: 'lms-dashboard',
@@ -121,7 +123,7 @@ export const projects: Project[] = [
     ],
     takeaways:
       'Designing for a community and government audience taught me to put clarity before decoration. Plain language, step-by-step flows, and a strong visual hierarchy matter more than visual flair when users range from village officials to residents with limited digital experience.',
-    // gallery: ['/projects/project-one-1.png', '/projects/project-one-2.png'],
+    gallery: ['/projects/bukitbakar-1.webp', '/projects/bukitbakar-2.webp', '/projects/bukitbakar-3.webp'],
     // links: [{ label: 'Live site', url: 'https://example.com' }],
   },
   {
@@ -142,6 +144,6 @@ export const projects: Project[] = [
     ],
     takeaways:
       'Redesigning a platform that serves two audiences, creators and brands, taught me to lead with one clear message and let secondary content support it. Gamified elements like ranks work best when the rules are easy to scan, and trust signals placed next to calls to action reduce hesitation.',
-    gallery: ['/projects/sema-1.webp',],
+    gallery: ['/projects/sema-1.webp', '/projects/sema-2.webp', '/projects/sema-3.webp'],
   },
 ];

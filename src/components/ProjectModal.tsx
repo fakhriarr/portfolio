@@ -3,6 +3,8 @@ import { AnimatePresence, motion } from 'motion/react';
 import { useRef } from 'react';
 import type { Project } from '@/data/projects';
 import { ProjectMedia } from '@/components/ProjectMedia';
+import { ProjectGallery } from '@/components/ProjectGallery';
+import { ModalBlock as Block } from '@/components/ModalBlock';
 import { useMediaQuery, usePrefersReducedMotion } from '@/hooks/useEnvironment';
 import { EASE_OUT_EXPO, spring } from '@/components/motion';
 import { ButtonLink } from '@/components/Button';
@@ -211,7 +213,7 @@ export function ProjectModal({
                       </Block>
 
                       <Block label="Key takeaways">
-                        <div className="rounded-[20px] bg-accent-soft p-5 md:p-6">
+                        <div className="rounded-[20px] bg-surface p-5 md:p-6">
                           <p className="measure text-[1.02rem] text-ink">
                             {project.takeaways}
                           </p>
@@ -219,20 +221,11 @@ export function ProjectModal({
                       </Block>
 
                       {project.gallery && project.gallery.length > 0 && (
-                        <Block label="Gallery">
-                          <div className="grid">
-                            {project.gallery.map((src, i) => (
-                              <img
-                                key={`${src}-${i}`}
-                                src={src}
-                                alt={`${project.title} — gallery image ${i + 1}`}
-                                loading="lazy"
-                                decoding="async"
-                                className="w-full rounded-[16px] border border-line bg-surface"
-                              />
-                            ))}
-                          </div>
-                        </Block>
+                        <ProjectGallery
+                          key={`${project.slug}-gallery`}
+                          images={project.gallery}
+                          title={project.title}
+                        />
                       )}
                     </motion.div>
 
@@ -282,33 +275,5 @@ export function ProjectModal({
         )}
       </AnimatePresence>
     </Dialog.Root>
-  );
-}
-
-function Block({
-  label,
-  children,
-}: {
-  label: string;
-  children: React.ReactNode;
-}) {
-  const reduced = usePrefersReducedMotion();
-
-  return (
-    <motion.section
-      variants={{
-        hidden: { opacity: 0, y: reduced ? 0 : 16 },
-        show: {
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.5, ease: EASE_OUT_EXPO },
-        },
-      }}
-    >
-      <h4 className="mb-4 text-[1.2rem] font-medium text-muted">
-        {label}
-      </h4>
-      {children}
-    </motion.section>
   );
 }

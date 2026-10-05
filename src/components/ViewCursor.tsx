@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'motion/react';
 
-const BUBBLE = 64;
+const BUBBLE = 48;
 
 /**
  * PRD M7 — custom cursor bubble over project cards, desktop + fine pointer only.
@@ -55,7 +55,7 @@ export function ViewCursor({ enabled }: { enabled: boolean }) {
   return (
     <motion.div
       aria-hidden="true"
-      className="pointer-events-none fixed top-0 left-0 z-[80] grid place-items-center rounded-pill bg-accent text-[0.8rem] font-semibold tracking-wide text-white"
+      className="pointer-events-none fixed top-0 left-0 z-[80] grid place-items-center rounded-pill bg-accent/50 border-1 border-accent text-[0.7rem] font-semibold tracking-wide text-white"
       style={{
         x: springX,
         y: springY,

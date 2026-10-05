@@ -65,11 +65,6 @@ export function Contact() {
 
   const rows = [
     { label: 'Email', value: contact.email, href: `mailto:${contact.email}` },
-    {
-      label: 'Phone',
-      value: contact.phoneDisplay,
-      href: `tel:${contact.phone}`,
-    },
     ...contact.links.map((link) => ({
       label: link.label,
       value: link.value,
