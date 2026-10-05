@@ -35,7 +35,7 @@ function ThumbImage({ src, alt = '' }: { src: string; alt?: string }) {
 
 /** Tune the decorative spark's softness and strength here. */
 const SPARK_BLUR = 48; // px of blur
-const SPARK_OPACITY = 0.25; // 0 (invisible) – 1 (solid)
+const SPARK_OPACITY = 0.15; // 0 (invisible) – 1 (solid)
 
 /** PRD M3 — 20s spin plus a scroll-driven extra quarter turn. */
 function HeroSpark({ containerRef }: { containerRef: React.RefObject<HTMLElement | null> }) {

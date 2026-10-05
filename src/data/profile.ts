@@ -21,15 +21,16 @@ export const profile = {
     'Adobe Photoshop',
     'Adobe XD',
     'Canva',
+    'Affinity',
     'Maze',
     'Trello',
     'Jira',
     'Azure',
   ],
   /** Contact section photo. */
-  portrait: '/photo/photo.png',
+  portrait: '/photo/photo.webp',
   /** Hero section photo. */
-  heroPortrait: '/photo/herophoto.png',
+  heroPortrait: '/photo/herophoto.webp',
   seo: {
     title: 'Muhammad Fakhri Ar Rouf — UI/UX Designer',
     description:
@@ -40,9 +41,9 @@ export const profile = {
 export const hero = {
   intro: "Hi, I'm Fakhri!",
   headline: {
-    before: 'I design simple, intuitive interfaces',
-    middle: 'people love',
-    after: 'to use.',
+    before: 'Where complexity meets clarity,',
+    middle: 'and good ideas',
+    after: 'feel effortless.',
   },
   supporting:
     'Web and mobile design, from first sketch to polished prototype.',

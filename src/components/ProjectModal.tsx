@@ -220,7 +220,7 @@ export function ProjectModal({
 
                       {project.gallery && project.gallery.length > 0 && (
                         <Block label="Gallery">
-                          <div className="grid gap-4 sm:grid-cols-2">
+                          <div className="grid">
                             {project.gallery.map((src, i) => (
                               <img
                                 key={`${src}-${i}`}
